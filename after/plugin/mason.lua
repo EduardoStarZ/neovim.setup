@@ -14,3 +14,12 @@ ui = {
 
 mason_lsp_config.setup()
 lsp_config.rust_analyzer.setup {}
+lsp_config.lua_ls.setup {}
+lsp_config.html.setup {}
+lsp_config.bashls.setup {}
+lsp_config.cssls.setup {}
+lsp_config.eslint.setup {}
+lsp_config.java_language_server.setup {}
+lsp_config.cmake.setup {}
+lsp_config.clangd.setup {}
+lsp_config.pylsp.setup {}
