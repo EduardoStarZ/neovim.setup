@@ -13,15 +13,17 @@ ui = {
 })
 
 mason_lsp_config.setup()
-lsp_config.rust_analyzer.setup {}
-lsp_config.lua_ls.setup {}
-lsp_config.html.setup {}
-lsp_config.bashls.setup {}
-lsp_config.cssls.setup {}
-lsp_config.eslint.setup {}
-lsp_config.java_language_server.setup {}
-lsp_config.cmake.setup {}
-lsp_config.clangd.setup {}
-lsp_config.pylsp.setup {}
-lsp_config.jinja_lsp.setup {}
-lsp_config.htmx.setup {}
+
+require("mason-lspconfig").setup_handlers {
+        -- The first entry (without a key) will be the default handler
+        -- and will be called for each installed server that doesn't have
+        -- a dedicated handler.
+        function (server_name) -- default handler (optional)
+            require("lspconfig")[server_name].setup {}
+        end,
+        -- Next, you can provide a dedicated handler for specific servers.
+        -- For example, a handler override for the `rust_analyzer`:
+        -- ["rust_analyzer"] = function ()
+        --    require("rust-tools").setup {}
+        -- end
+}
