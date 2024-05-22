@@ -23,3 +23,5 @@ lsp_config.java_language_server.setup {}
 lsp_config.cmake.setup {}
 lsp_config.clangd.setup {}
 lsp_config.pylsp.setup {}
+lsp_config.jinja_lsp.setup {}
+lsp_config.htmx.setup {}
