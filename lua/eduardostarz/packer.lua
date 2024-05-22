@@ -16,12 +16,13 @@ return require('packer').startup(function(use)
   }
   
   -- Color Scheme Setup
-  use ({ 
-	"scottmckendry/cyberdream.nvim",
-	as ="cyberdream",
-	config = function()
-		vim.cmd("colorscheme cyberdream")
-	end
+  use ({
+		  "savq/melange-nvim",
+		  -- "scottmckendry/cyberdream.nvim",
+		  as ="melange",
+		  config = function()
+				  vim.cmd("colorscheme melange")
+		  end
   })
 
   --Treesitter Setup

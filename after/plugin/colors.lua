@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "cyberdream"
+	color = color or "melange"
 	vim.cmd.colorscheme(color)
 
 	-- Adds opacity to terminal when neovim is open

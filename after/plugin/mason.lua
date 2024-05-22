@@ -12,7 +12,20 @@ ui = {
 }
 })
 
-mason_lsp_config.setup()
+mason_lsp_config.setup({
+		ensure_installed = {
+				"lua_ls",
+				"rust_analyzer",
+				"eslint",
+				"pylsp",
+				"cssls",
+				"htmx",
+				"jinja_lsp",
+				"html",
+				"bashls",
+				"java_language_server"
+		}
+})
 
 require("mason-lspconfig").setup_handlers {
         -- The first entry (without a key) will be the default handler
