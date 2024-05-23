@@ -23,7 +23,6 @@ mason_lsp_config.setup({
 				"jinja_lsp",
 				"html",
 				"bashls",
-				"java_language_server"
 		}
 })
 
