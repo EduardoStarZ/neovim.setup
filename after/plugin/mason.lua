@@ -23,7 +23,6 @@ mason_lsp_config.setup({
 				"jinja_lsp",
 				"html",
 				"bashls",
-				"java_language_server"
 		}
 })
 
@@ -40,3 +39,31 @@ require("mason-lspconfig").setup_handlers {
         --    require("rust-tools").setup {}
         -- end
 }
+
+lsp_config.html.setup({
+		capabilities = capabilities,
+		init_options = {
+				configurationSection = { "html", "css", "javascript", "htmx", "jinja" },
+				embeddedLanguages = {
+						jinja = true,
+						htmx = true,
+						css = true,
+						javascript = true,
+				},
+				provideFormatter = true,
+		},
+})
+
+lsp_config.jinja_lsp.setup({
+		capabilities = capabilities,
+		init_options = {
+				configurationSection = { "html", "css", "javascript", "htmx", "jinja" },
+				embeddedLanguages = {
+						htmx = true,
+						html = true,
+						css = true,
+						javascript = true,
+				},
+				provideFormatter = true,
+		},
+})
