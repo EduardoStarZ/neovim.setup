@@ -16,7 +16,7 @@ cmp.setup({
     ['<C-Down>'] = cmp.mapping.scroll_docs(4),
     ['<Up>'] = cmp.mapping.select_prev_item(cmp_select_opts),
     ['<Down>'] = cmp.mapping.select_next_item(cmp_select_opts),
-    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-Space>'] = cmp.mapping.abort(),
  },
   snippet = {
     expand = function(args)
