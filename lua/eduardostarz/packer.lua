@@ -15,11 +15,12 @@ return require('packer').startup(function(use)
 
   -- Color Scheme Setup
   use ({
-		  "savq/melange-nvim",
+		  -- "savq/melange-nvim",
 		  -- "scottmckendry/cyberdream.nvim",
-		  as ="melange",
+		  "xero/miasma.nvim",
+		  as ="miasma",
 		  config = function()
-				  vim.cmd("colorscheme melange")
+				  vim.cmd("colorscheme miasma")
 		  end
   })
 
