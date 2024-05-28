@@ -85,4 +85,4 @@ A couple notes about the LSP's: by default, if you want to install rust-analyzer
 
 - (Normal mode) <leader>a => Adds the current file into the harpoon menu at the very bottom.
 - (Normal mode) CTRL + e => Opens up the harpoon menu.
-- (Normal mode) <leader> 1-5 => Quickly switches to the file according to the pressed number and to it's position in the harpoon menu.
+- (Normal mode) <leader> 1..0 => Quickly switches to the file according to the pressed number and to it's position in the harpoon menu.
