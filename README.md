@@ -50,7 +50,11 @@ A couple notes about the LSP's: by default, if you want to install rust-analyzer
 - (Normal mode) Shift + < => Indents the current line to the left.
 - (Normal mode) Shift + > => Indents the current line to the right.
 - (Normal mode, Visual mode) = => Indents the current line according to it's surrounding code, or indents all the selected code with visual mode according the same rule.
-
+- (Visual mode) gc => Comments the code on the current line, or in the selection of visual mode.
+- (Normal mode) CTRL + <leader> + Arrow Down => Creates a new window on the same file, horizontally to the current one.
+- (Normal mode) CTRL + <leader> + Arrow Left => Creates a new window on the same file, vertically to the current one.
+- (Normal mode) <leader> Any Arrow Key => Moves the cursor to the screen in the direction pressed, does nothing with a single window.
+- (Normal mode) <leader>q => Closes windows starting from the last one and going towards the first one.
 
 ### LSP remaps (only does something when a snippet is displayed):
 - (Insert mode) Enter => Accepts the suggestion from the autocomplete snippet.
