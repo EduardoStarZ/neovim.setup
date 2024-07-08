@@ -55,4 +55,7 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
 }
+
+		 use ('vyfor/cord.nvim', {run = "./build"})
+
 end)
