@@ -23,6 +23,7 @@ mason_lsp_config.setup({
 				"jinja_lsp",
 				"html",
 				"bashls",
+				"eslint"
 		}
 })
 
