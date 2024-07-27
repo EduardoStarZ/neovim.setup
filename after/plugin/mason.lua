@@ -23,7 +23,8 @@ mason_lsp_config.setup({
 				"jinja_lsp",
 				"html",
 				"bashls",
-				"eslint"
+				"eslint",
+				"tsserver"
 		}
 })
 
@@ -48,20 +49,6 @@ lsp_config.html.setup({
 				embeddedLanguages = {
 						jinja = true,
 						htmx = true,
-						css = true,
-						javascript = true,
-				},
-				provideFormatter = true,
-		},
-})
-
-lsp_config.jinja_lsp.setup({
-		capabilities = capabilities,
-		init_options = {
-				configurationSection = { "html", "css", "javascript", "htmx", "jinja" },
-				embeddedLanguages = {
-						htmx = true,
-						html = true,
 						css = true,
 						javascript = true,
 				},
