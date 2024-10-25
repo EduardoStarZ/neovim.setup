@@ -24,7 +24,6 @@ mason_lsp_config.setup({
 				"html",
 				"bashls",
 				"eslint",
-				"tsserver"
 		}
 })
 

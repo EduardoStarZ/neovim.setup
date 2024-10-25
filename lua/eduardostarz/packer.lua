@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
 		  {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},
 
+
 		  -- Autocompletion
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-buffer'},
@@ -53,9 +54,16 @@ return require('packer').startup(function(use)
 		  -- Snippets
 		  {'L3MON4D3/LuaSnip'},
 		  {'rafamadriz/friendly-snippets'},
-	  }
+	  },
+
+	  use({
+			  "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+			  config = function()
+					  require("lsp_lines").setup()
+			  end,
+	  })
 }
 
-		 use ('vyfor/cord.nvim', {run = "./build"})
+		 -- use ('vyfor/cord.nvim', {run = "build"})
 
 end)
