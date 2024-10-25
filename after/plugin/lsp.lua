@@ -25,8 +25,8 @@ cmp.setup({
   },
   window = {
     documentation = {
-      max_height = 15,
-      max_width = 60,
+      max_height = 60,
+      max_width = 90,
     }
   },
   formatting = {
