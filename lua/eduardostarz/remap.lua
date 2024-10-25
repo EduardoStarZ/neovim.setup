@@ -10,5 +10,4 @@ vim.keymap.set("n", "<C-Space><Right>", vim.cmd.vsplit)
 vim.keymap.set("n", "<C-Space><Down>", vim.cmd.split)
 vim.keymap.set("n", "<leader>q", function() vim.cmd("$close")  end)
 vim.keymap.set("i", "<C-a>", require("lsp_lines").toggle)
-
 vim.keymap.set("n", "<C-a>", require("lsp_lines").toggle)
