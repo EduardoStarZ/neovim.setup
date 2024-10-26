@@ -1,4 +1,4 @@
-vim.diagnostic.config({virtual_text = false})
+vim.diagnostic.config({virtual_text = false, virtual_lines = {only_current_line = true}})
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>ko", vim.cmd.Ex)
@@ -11,3 +11,4 @@ vim.keymap.set("n", "<C-Space><Down>", vim.cmd.split)
 vim.keymap.set("n", "<leader>q", function() vim.cmd("$close")  end)
 vim.keymap.set("i", "<C-a>", require("lsp_lines").toggle)
 vim.keymap.set("n", "<C-a>", require("lsp_lines").toggle)
+vim.keymap.set("n", "<C-x>", function() vim.diagnostic.open_float() end)
