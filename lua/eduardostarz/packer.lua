@@ -33,6 +33,8 @@ return require('packer').startup(function(use)
 
   use ('tpope/vim-fugitive')
 
+  use ('andweeb/presence.nvim')
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = "v2.x",
@@ -65,5 +67,4 @@ return require('packer').startup(function(use)
 }
 
 		 -- use ('vyfor/cord.nvim', {run = "build"})
-
 end)
