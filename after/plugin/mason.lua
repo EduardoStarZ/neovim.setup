@@ -17,13 +17,9 @@ mason_lsp_config.setup({
 				"lua_ls",
 				"rust_analyzer",
 				"eslint",
-				"pylsp",
 				"cssls",
 				"htmx",
-				"jinja_lsp",
 				"html",
-				"bashls",
-				"eslint",
 		}
 })
 
