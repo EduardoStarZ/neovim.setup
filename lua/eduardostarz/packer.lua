@@ -13,14 +13,17 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use 'rktjmp/lush.nvim'
+
   -- Color Scheme Setup
   use ({
 		  -- "savq/melange-nvim",
 		  -- "scottmckendry/cyberdream.nvim",
-		  "xero/miasma.nvim",
-		  as ="miasma",
+		  -- "xero/miasma.nvim",
+		  "eduardostarz/metamorphosis.nvim",
+		  as ="metamorphosis",
 		  config = function()
-				  vim.cmd("colorscheme miasma")
+				  vim.cmd("colorscheme metamorphosis")
 		  end
   })
 

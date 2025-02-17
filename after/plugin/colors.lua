@@ -1,5 +1,7 @@
+require("metamorphosis").setup()
+
 function ColorMyPencils(color)
-	color = color or "miasma"
+	color = color or "metamorphosis"
 	vim.cmd.colorscheme(color)
 
 	-- Adds opacity to terminal when neovim is open
