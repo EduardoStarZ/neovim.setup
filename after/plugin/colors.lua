@@ -1,5 +1,3 @@
-require("metamorphosis").setup()
-
 function ColorMyPencils(color)
 	color = color or "metamorphosis"
 	vim.cmd.colorscheme(color)
