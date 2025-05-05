@@ -63,6 +63,7 @@ A couple notes about the LSP's: by default, if you want to install rust-analyzer
 - (Insert mode) Arrow Down => Goes down on the list of completion suggestion.
 - (Insert mode) CTRL + Arrow Up => Scrolls upwards the documentation preview of the highlighted item in the completion suggestion snippet.
 - (Insert mode) CTRL + Arrow Down => Scrolls downwards on the documentation preview of the highlighted item in the completion suggestionsnippet.
+- (Normal mode) CTRL + ] => Jumps to definition.
 
 
 ### Telescope remaps:
@@ -74,7 +75,7 @@ A couple notes about the LSP's: by default, if you want to install rust-analyzer
 
 ### Undotree remaps:
 
-- (Normal mode) <leader>u => Opens up undotree menu and displays previous versions of the opened file. 
+- (Normal mode) <C-u> => Opens up undotree menu and displays previous versions of the opened file. 
 
 
 ### Vim-fugitive remaps: 
