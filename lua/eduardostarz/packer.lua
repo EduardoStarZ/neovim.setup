@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
 
   use 'rktjmp/lush.nvim'
 
+  use("catgoose/nvim-colorizer.lua")
+
   -- Color Scheme Setup
   use ({
 		  -- "savq/melange-nvim",
