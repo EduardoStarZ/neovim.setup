@@ -1,7 +1,3 @@
-local lsp = require('lsp-zero')
-
-lsp.preset('recommended')
-
 local cmp = require('cmp')
 local cmp_select_opts = {behavior = cmp.SelectBehavior.Select}
 
@@ -44,15 +40,3 @@ cmp.setup({
     end,
   },
 })
-
-
-lsp.set_preferences({
-  sign_icons = { }
-})
-
-lsp.on_attach(function(client, bufnr)
-	local opts = {buffer = bufnr, remap = false}
-end)
-
-
-lsp.setup()

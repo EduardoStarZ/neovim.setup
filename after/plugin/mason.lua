@@ -28,7 +28,7 @@ require("mason-lspconfig").setup {
         -- and will be called for each installed server that doesn't have
         -- a dedicated handler.
         function (server_name) -- default handler (optional)
-            require("lspconfig")[server_name].setup {}
+            vim.lsp.server_name.setup {}
         end,
         -- Next, you can provide a dedicated handler for specific servers.
         -- For example, a handler override for the `rust_analyzer`:
@@ -37,7 +37,7 @@ require("mason-lspconfig").setup {
         -- end
 }
 
-lsp_config.html.setup({
+vim.lsp.config['html'] = {
 		capabilities = capabilities,
 		init_options = {
 				configurationSection = { "html", "css", "javascript", "htmx", "jinja" },
@@ -49,4 +49,4 @@ lsp_config.html.setup({
 				},
 				provideFormatter = true,
 		},
-})
+}

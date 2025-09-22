@@ -1,5 +1,3 @@
-require("eduardostarz.remap")
-require("eduardostarz.packer")
-require("eduardostarz.set")
+require("eduardostarz.lazy")
 
 vim.cmd("set hlsearch")
