@@ -30,7 +30,7 @@ require("lazy").setup({
 			'nvim-lua/plenary.nvim',
 			"catgoose/nvim-colorizer.lua",
 			'rktjmp/lush.nvim',
-			"eduardostarz/metamorphosis.nvim",
+			"xero/miasma.nvim",
 			{"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"},
 			'theprimeagen/harpoon',
 			'mbbill/undotree',

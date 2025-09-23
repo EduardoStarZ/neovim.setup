@@ -1,7 +1,15 @@
+local miasma = require('lualine.themes.gruvbox-material')
+
+miasma.visual.a.bg = '#b36d43'
+miasma.insert.a.bg = '#c9a554'
+miasma.normal.a.bg = '#5f875f'
+miasma.command.a.bg = '#bb7744'
+miasma.replace.a.bg = '#d7c483'
+
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'horizon',
+    theme = miasma,
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
