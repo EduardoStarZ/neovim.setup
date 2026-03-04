@@ -38,19 +38,19 @@ It's very well handcrafted, personally designed to suit my needs, and as minimal
 
 # My remaps
 
-<leader> is set to be the space bar key.
+&lt;leader&gt; is set to be the space bar key.
 
 
 ### Default neovim:
-- (Normal mode) /leader/ ko => opens up netrw directory view.
+- (Normal mode) &lt;leader&gt; ko => opens up netrw directory view.
 - (Normal mode) Shift + < => Indents the current line to the left.
 - (Normal mode) Shift + > => Indents the current line to the right.
 - (Normal mode, Visual mode) = => Indents the current line according to it's surrounding code, or indents all the selected code with visual mode according the same rule.
 - (Visual mode) gc => Comments the code on the current line, or in the selection of visual mode.
-- (Normal mode) CTRL + /leader/ + Arrow Down => Creates a new window on the same file, horizontally to the current one.
-- (Normal mode) CTRL + /leader/ + Arrow Left => Creates a new window on the same file, vertically to the current one.
-- (Normal mode) /leader/ Any Arrow Key => Moves the cursor to the screen in the direction pressed, does nothing with a single window.
-- (Normal mode) /leader/ q => Closes windows starting from the last one and going towards the first one.
+- (Normal mode) CTRL + &lt;leader&gt; + Arrow Down => Creates a new window on the same file, horizontally to the current one.
+- (Normal mode) CTRL + &lt;leader&gt; + Arrow Left => Creates a new window on the same file, vertically to the current one.
+- (Normal mode) &lt;leader&gt; Any Arrow Key => Moves the cursor to the screen in the direction pressed, does nothing with a single window.
+- (Normal mode) &lt;leader&gt; q => Closes windows starting from the last one and going towards the first one.
 
 ### LSP remaps (only does something when a snippet is displayed):
 - (Insert mode) Enter => Accepts the suggestion from the autocomplete snippet.
@@ -64,7 +64,7 @@ It's very well handcrafted, personally designed to suit my needs, and as minimal
 
 ### Telescope remaps:
 
-- (Normal mode) /leader/ ff => Opens up the fuzzy finder find files menu.
+- (Normal mode) &lt;leader&gt; ff => Opens up the fuzzy finder find files menu.
 - (Normal mode) CTRL + g => Opens up the fuzzy finder find files menu, but only shows the files that are covered by the git repository. If not inside a git repository, an error will be displayed.
 - (Normal mode) CTRL + f => Opens up a prompt in the vim command menu, the inputed string will be used as a needle, and the haystack will be every file containing the needle.
 
@@ -75,11 +75,11 @@ It's very well handcrafted, personally designed to suit my needs, and as minimal
 
 
 ### Vim-fugitive remaps: 
-- (Normal mode) /leader/ gs => Opens up a menu that shows unstaged and untracked files, as well as the head of the git repository.
+- (Normal mode) &lt;leader&gt; gs => Opens up a menu that shows unstaged and untracked files, as well as the head of the git repository.
 
 
 ### Harpoon remaps: 
 
-- (Normal mode) /leader/ a => Adds the current file into the harpoon menu at the very bottom.
+- (Normal mode) &lt;leader&gt; a => Adds the current file into the harpoon menu at the very bottom.
 - (Normal mode) CTRL + e => Opens up the harpoon menu.
-- (Normal mode) /leader/ 1..0 => Quickly switches to the file according to the pressed number and to it's position in the harpoon menu.
+- (Normal mode) &lt;leader&gt; 1..0 => Quickly switches to the file according to the pressed number and to it's position in the harpoon menu.
