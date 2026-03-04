@@ -51,14 +51,15 @@ It's very well handcrafted, personally designed to suit my needs, and as minimal
 - (Normal mode) CTRL + &lt;leader&gt; + Arrow Left => Creates a new window on the same file, vertically to the current one.
 - (Normal mode) &lt;leader&gt; Any Arrow Key => Moves the cursor to the screen in the direction pressed, does nothing with a single window.
 - (Normal mode) &lt;leader&gt; q => Closes windows starting from the last one and going towards the first one.
+- (Normal mode) &lt;leader&gt; q => Closes focused window unless if the current window is the last open window.
 
 ### LSP remaps (only does something when a snippet is displayed):
 - (Insert mode) Enter => Accepts the suggestion from the autocomplete snippet.
-- (Insert mode) CTRL + Space or CTRL + E => Closes the snippet.
-- (Insert mode) Arrow Up => Goes up on the list of completion suggestions.
-- (Insert mode) Arrow Down => Goes down on the list of completion suggestion.
-- (Insert mode) CTRL + Arrow Up => Scrolls upwards the documentation preview of the highlighted item in the completion suggestion snippet.
-- (Insert mode) CTRL + Arrow Down => Scrolls downwards on the documentation preview of the highlighted item in the completion suggestionsnippet.
+- (Insert mode) CTRL + E => Toggles snippet for code completion and code documentation.
+- (Insert mode) CTRL + Arrow Up => Goes up on the list of completion suggestions.
+- (Insert mode) CTRL + Arrow Down => Goes down on the list of completion suggestion.
+- (Insert mode) CTRL + Shift + Arrow Up => Scrolls upwards the documentation preview of the highlighted item in the completion suggestion snippet.
+- (Insert mode) CTRL + Shift + Arrow Down => Scrolls downwards on the documentation preview of the highlighted item in the completion suggestionsnippet.
 - (Normal mode) CTRL + ] => Jumps to definition.
 
 
