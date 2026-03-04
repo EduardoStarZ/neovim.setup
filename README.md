@@ -2,42 +2,33 @@
 
 This setup contains a bunch of neovim plugins packed together to enhance my personal experience with development.
 
-It's very well handcrafted, personally designed to suit my needs, and as minimalistic and functional as possible.
+It's very well handcrafted, personally designed to suit my needs, and as minimalistic, functional and performance optimized as possible.
 
 # What i used:
 
-- For a package manager, i went with [packer.nvim](https://github.com/wbthomason/packer.nvim), maybe outdated and unmaintaned, but it's still functional enough.
+- For a package manager, i use [lazy.nvim](https://github.com/folke/lazy.nvim), very simple to use, very simple and has little to no performance overhead.
 
-- For text highlighting, i went with [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), awesome at what it does, very lightweight and performant.
+- For text highlighting, i use [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), awesome at what it does, very lightweight and performant.
 
 - For text completion, a complete set of plugins was used, mostly are dependencies of [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim), and other are dependencies of these dependencies, check out 'lua/eduardostarz/packer.lua' for a complete list with all the plugins used:
 
     . *[mason.nvim](https://github.com/williamboman/mason.nvim) to install, configure usage and manage LSP packages.*
-
     . *[nvim-cmp](https://github.com/hrsh7th/nvim-cmp), a plugin that allows for LSP's to display snippets with completion for code.*
-    . *[harpoon](https://github.com/theprimaegen/harpoon), a plugin that allows for a quick switch between files*
+    . *[harpoon](https://github.com/theprimaegen/harpoon), a plugin that allows for a quick switch between files.*
     . *[telescope](https://github.com/nvim-telescope/telescope.nvim), a very fast fuzzy finder to quick switch between files in a larger scope.*
     . *[undotree](https://github.com/mbbill/undotree) a great plugin that allows for a tree view over the past versions of your file, at the rate it gets updated.*
     . *[vim-fugitive](https://github.com/tpope/vim-fugitive) a plugin that allows visualization of git changes, files and more git related features inside neovim.*
 
 
-# Default LSP's
+# Default Treesitter Parsers
 
-- **bashls (Bash Script)**
-- **cssls (CSS)**
-- **eslint (Javascript)**
-- **html-lsp (HTML)**
-- **htmx-lsp (HTMX)**
-- **jinja-lsp (Jinja2)**
-- **lua-ls (Lua)**
-- **pylsp (Python)**
-- **rust-analyzer (Rust)**
-
-A couple notes about the LSP's: by default, if you want to install rust-analyzer you need to have the Cargo Toolchain installed, for pylsp you need both python3 and pip installed, and for cssls, html-lsp and eslint, although there is no exact requirement at all to install the LSP's, they won't work out of the blue, they need to be set up when the most recent version of NodeJs and npm are installed on your machine. If you installed these LSP's without the requirements, pressing up 'X' on the mason menu will delete the LSP. After that, complete the requirements for installation and simply restart neovim, the said LSP's will reinstall themselfs.
+- **Lua**
+- **VimScript**
+- **VimDoc**
+- **Bash**
 
 # Important commands
 
-- :PackerSync => Updates all packages listed in packer.lua and deletes every other that isn't listed there anymore.
 - :Mason => Opens up the Mason menu.
 
 # My remaps
@@ -46,7 +37,7 @@ A couple notes about the LSP's: by default, if you want to install rust-analyzer
 
 
 ### Default neovim:
-- (Normal mode) <leader>ko => opens up netrw directory view.
+- (Normal mode) /<leader/> ko => opens up netrw directory view.
 - (Normal mode) Shift + < => Indents the current line to the left.
 - (Normal mode) Shift + > => Indents the current line to the right.
 - (Normal mode, Visual mode) = => Indents the current line according to it's surrounding code, or indents all the selected code with visual mode according the same rule.
