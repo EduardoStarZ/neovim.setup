@@ -17,4 +17,4 @@ vim.api.nvim_set_hl(0, 'DiagnosticSignInfo', { bg = "NONE" })
 vim.api.nvim_set_hl(0, 'DiagnosticSignHint', { bg = "NONE" })
 
 vim.g.netrw_banner = 0
-vim.g.netrw_liststyle = 3
+vim.g.netrw_liststyle = 0
